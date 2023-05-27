@@ -7,8 +7,8 @@ Este é um sistema desenvolvido para facilitar o processo de contratação no de
 Aqui estão as tarefas a serem realizadas para finalizar o projeto:
 
 #### Vagas
-- [ ] Criar página de criação de nova vaga
-- [ ] Criar página de visualização de vagas arquivadas
+- [X] Criar página de criação de nova vaga
+- [X] Criar página de visualização de vagas arquivadas
 - [X] Criar módulo de remoção de vaga do banco de dados
 - [X] Criar tabela com vagas disponíveis
 - [ ] Criar módulo de visualização (view) para a página de vagas
