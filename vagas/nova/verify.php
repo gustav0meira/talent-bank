@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -29,6 +29,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("ssssssssss", $titulo, $descricao, $salario, $local, $modalidade, $tipoContrato, $nivelCarreira, $dataPublicacao, $dataLimite, $status);
 
         if ($stmt->execute()) {
+            // Criar a pasta
+            $pasta = strtolower(str_replace(' ', '-', $titulo));
+            $caminho = "../ver/" . $pasta;
+            mkdir($caminho, 0777);
+
+            // Copiar o arquivo index.php para a nova pasta
+            $origem = "../ver/example/index.php";
+            $destino = $caminho . "/index.php";
+            copy($origem, $destino);
+
             header("Location: ../");
             exit;
         } else {
@@ -40,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-}else{
+} else {
     header("Location: ../?error=" . urlencode($conn->error));
 }
 ?>

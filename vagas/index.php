@@ -42,7 +42,8 @@ function AcoesCellRenderer(params) {
   linkView.style.backgroundColor = "transparent";
   linkView.style.border = "none";
   linkView.style.cursor = "pointer";
-  linkView.href = './ver/?id=' + params.data.id;
+  linkView.href = './ver/' + params.data.titulo.toLowerCase().replace(/\s+/g, '-') + '/?id=' + params.data.id;
+  linkView.target = "_blank"; // Adicionar o atributo target="_blank"
   const iconView = document.createElement('span');
   iconView.classList.add('fa-regular', 'fa-eye');
   linkView.appendChild(iconView);
