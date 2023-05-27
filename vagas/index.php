@@ -69,6 +69,16 @@ function AcoesCellRenderer(params) {
   iconTrash.classList.add('fa-regular', 'fa-trash-can');
   linkTrash.appendChild(iconTrash);
 
+  linkTrash.addEventListener('click', function (event) {
+    event.preventDefault(); // Evita o redirecionamento padrão do link
+
+    const confirmDelete = confirm("Tem certeza de que deseja excluir este registro?");
+    if (confirmDelete) {
+      // Adicione aqui o código para realizar a exclusão do registro
+      window.location.href = linkTrash.href;
+    }
+  });
+
   const container = document.createElement('div');
   container.appendChild(linkView);
   container.appendChild(linkEdit);
