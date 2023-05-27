@@ -2,6 +2,14 @@
 
 Este é um sistema desenvolvido para facilitar o processo de contratação no departamento de Recursos Humanos (RH) de uma empresa. O sistema oferece funcionalidades para gerenciamento de vagas, triagem automática de currículos, entrevistas virtuais, testes e avaliações online, colaboração entre a equipe de recrutamento, integração com outras ferramentas, automação de tarefas, análise de dados e relatórios.
 
+## Tasks
+
+Aqui estão as tarefas a serem realizadas para finalizar o projeto:
+
+#### Vagas
+- [ ] Criar módulo de visualização (view) para a página de vagas
+- [ ] Criar módulo de edição (edit) para a página de vagas
+
 ## Padronização de Código
 
 Para manter um código claro, legível e coeso, siga as diretrizes de padronização abaixo:
