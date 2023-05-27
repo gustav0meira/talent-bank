@@ -22,12 +22,12 @@
 				<label class="align title"><i class="fa-regular fa-folder"></i>   >   <?php echo $pageName ?></label>
 			</div>
 			<div class="col-6">
-				<button class="topModule right">📂  Vagas Arquivadas</button>
-				<button class="topModule right">📄  Nova Vaga</button>
+				<a href="./arquivadas/"><button class="topModule right">📂  Vagas Arquivadas</button></a>
+				<a href="./nova/"><button class="topModule right">📄  Nova Vaga</button></a>
 			</div>
 			<div class="col-12">
 				<div class="module">
-					<div id="vagasAbertas" style="height: 200px; width:500px;" class="ag-theme-material custom-scrollbar"></div>
+					<div id="vagasAbertas" class="ag-theme-material custom-scrollbar"></div>
 				</div>
 			</div>
 		</div>
@@ -42,7 +42,7 @@ function AcoesCellRenderer(params) {
   linkView.style.backgroundColor = "transparent";
   linkView.style.border = "none";
   linkView.style.cursor = "pointer";
-  linkView.href = './view/?id=' + params.data.id;
+  linkView.href = './ver/?id=' + params.data.id;
   const iconView = document.createElement('span');
   iconView.classList.add('fa-regular', 'fa-eye');
   linkView.appendChild(iconView);
@@ -53,7 +53,7 @@ function AcoesCellRenderer(params) {
   linkEdit.style.backgroundColor = "transparent";
   linkEdit.style.border = "none";
   linkEdit.style.cursor = "pointer";
-  linkEdit.href = './edit/?id=' + params.data.id;
+  linkEdit.href = './editar/?id=' + params.data.id;
   const iconEdit = document.createElement('span');
   iconEdit.classList.add('fa-regular', 'fa-edit');
   linkEdit.appendChild(iconEdit);
@@ -64,7 +64,7 @@ function AcoesCellRenderer(params) {
   linkTrash.style.backgroundColor = "transparent";
   linkTrash.style.border = "none";
   linkTrash.style.cursor = "pointer";
-  linkTrash.href = './trash/?id=' + params.data.id;
+  linkTrash.href = './remover/?id=' + params.data.id;
   const iconTrash = document.createElement('span');
   iconTrash.classList.add('fa-regular', 'fa-trash-can');
   linkTrash.appendChild(iconTrash);
@@ -111,14 +111,14 @@ const columnDefs = [
 
 const rowData = [
   <?php
-  $consulta = "SELECT * FROM vagas";
+  $consulta = "SELECT * FROM vagas WHERE status != 'arquivada'";
   $con = $conn->query($consulta) or die($conn->error);
   while($dado = $con->fetch_array()) { ?> 
 
     {
       id: "<?php echo $dado['id'] ?>",
       titulo: "<?php echo $dado['titulo'] ?>",
-      salario: "<?php echo $dado['salario'] ?>",
+      salario: "R$ <?php echo number_format($dado['salario'], 2, ',', '.') ?>",
       local: "<?php echo $dado['local'] ?>",
       modalidade: "<?php echo $dado['modalidade'] ?>",
       status: "<?php echo $dado['status'] ?>"

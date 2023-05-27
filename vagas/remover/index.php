@@ -6,19 +6,19 @@ if (isset($_GET['id'])) {
     // Obtém o ID do parâmetro GET
     $id = $_GET['id'];
 
-    // Prepara a consulta para excluir o registro com base no ID
-    $query = "DELETE FROM vagas WHERE id = ?";
+    // Prepara a consulta para definir o status como "Arquivada" baseado no ID
+    $query = "UPDATE vagas SET status = 'Arquivada' WHERE id = ?";
     $stmt = $conn->prepare($query);
     $stmt->bind_param('i', $id);
 
     // Executa a consulta
     if ($stmt->execute()) {
-        // Registro removido com sucesso
+        // Registro arquivado com sucesso
         header("Location: ../");
         exit();
     } else {
-        // Ocorreu um erro ao remover o registro
-        $error = "Erro ao remover o registro: " . $stmt->error;
+        // Ocorreu um erro ao arquivar o registro
+        $error = "Erro ao arquivar o registro: " . $stmt->error;
         echo "<script>alert('$error'); window.location.href = '../';</script>";
     }
 

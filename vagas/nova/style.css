@@ -1,0 +1,31 @@
+label{
+	font-size: 14px !important;
+	font-weight: 300;
+	margin-bottom: 3px;
+}
+
+input,
+select{
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #00000030;
+	width: 100%;
+	font-weight: 300 !important;
+	font-size: 14px !important;
+	margin-bottom: 20px;
+}
+
+.module{
+	height: auto !important;
+	padding-bottom: 85px !important;
+}
+
+a{
+	color: #333 !important;
+	text-decoration: none !important;
+}
+
+#editor{
+	font-family: Poppins !important;
+	font-size: 14px !important;
+}
