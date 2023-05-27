@@ -42,6 +42,7 @@
 			</div>
 			<div class="col-6">
 				<button form="newVacancy" class="topModule right">🛟  Salvar</button>
+				<a href="../"><button class="topModule back right">📝  Cancelar</button></a>
 			</div>
 			<div class="col-12">
 				<form method="POST" action="./verify.php" id="newVacancy">

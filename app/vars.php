@@ -43,8 +43,8 @@
 	}
 	button.topModule{
 		padding: 10px;
-		border: 1px solid #1D4F4A;
-		background: #1D4F4A;
+		border: 1px solid #151E33;
+		background: #151E33;
 		color: white;
 		border-radius: 15px;
 		font-size: 13px;
