@@ -116,7 +116,7 @@
 		</a> -->
 
 		<!-- link -->
-		<a href="<?php echo $appLocal ?>/">
+		<a href="<?php echo $appLocal ?>/curriculos/">
 			<div class="linkAdmin <?php if ($pageName == 'Currículos'){echo 'ativo';} ?>">
 				<div class="row">
 					<div style="text-align: center;" class="col-3">

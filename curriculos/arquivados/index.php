@@ -1,8 +1,8 @@
-<?php $pageName = 'Currículos'; ?>
-<?php require_once('../app/config.php'); ?>
-<?php require_once('../app/vars.php'); ?>
-<?php require_once('../app/cdn.php'); ?>
-<?php require_once('../app/menu.php'); ?>
+<?php $pageName = 'Currículos Arquivados'; ?>
+<?php require_once('../../app/config.php'); ?>
+<?php require_once('../../app/vars.php'); ?>
+<?php require_once('../../app/cdn.php'); ?>
+<?php require_once('../../app/menu.php'); ?>
 
 <!DOCTYPE html>
 <html>
@@ -13,7 +13,7 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/styles/ag-theme-material.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
 	<div class="container">
@@ -22,7 +22,7 @@
 				<label class="align title"><i class="fa-regular fa-folder"></i>   >   <?php echo $pageName ?></label>
 			</div>
 			<div class="col-6">
-				<a href="./arquivados/"><button class="topModule right">📂  Arquivados</button></a>
+				<a href="../"><button class="topModule right">📂  Arquivados</button></a>
 			</div>
 			<div class="col-12">
 				<div class="module">
@@ -111,7 +111,7 @@ const columnDefs = [
 
 const rowData = [
   <?php
-  $consulta = "SELECT * FROM curriculos WHERE status != 'arquivado'";
+  $consulta = "SELECT * FROM curriculos WHERE status = 'arquivado'";
   $con = $conn->query($consulta) or die($conn->error);
   while($dado = $con->fetch_array()) { ?> 
 
