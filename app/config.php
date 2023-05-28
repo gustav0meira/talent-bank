@@ -4,7 +4,7 @@
 	$servername = "gustav0meira.cloud";
 	$username = "u868458939_easyrecruit";
 	$password = "Easy@Recruit7";
-	$dbname = "easyrecruit";
+	$dbname = "u868458939_easyrecruit";
 
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	if ($conn->connect_error) {
