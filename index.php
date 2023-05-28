@@ -28,15 +28,15 @@
 				<div class="align">
 					<center>
 						<img class="logo" src="assets/logo.png">
-						<h1>Encontre oportunidades de trabalho!</h1>
-						<p>Procure uma vaga relevante em sua área e submeta o seu CV</p>
+						<h1>Descubra oportunidades incríveis!</h1>
+						<p>Encontre a vaga perfeita na sua área e envie o seu currículo hoje mesmo!</p>
 						<div class="search">
 							<div class="row">
 								<div class="col-10">
 									<input class="left" type="text" name="searchVacancy" placeholder="Procure oportunidades...">
 								</div>
 								<div class="col-sm">
-									<button class="right">></button>
+									<button class="right"><i class="fa-solid fa-magnifying-glass"></i></button>
 								</div>
 							</div>
 						</div>
