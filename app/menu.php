@@ -3,7 +3,7 @@
 		margin: 0px !important;
 	}
 	div.leftbarAdmin{
-		background: #151E33;
+		background: #05080e;
 		height: 100vh;
 		width: 16vw;
 		z-index: 1 !important;
@@ -69,20 +69,7 @@
 		<div class="logo">
 			<center>
 				<img class="adminLogo" src="<?php echo $appLocal ?>/assets/logo.png">
-				<hr>
-				<div class="linkProfile">
-					<div class="row">
-						<div class="col-4">
-							<center>	
-								<div style="background: url('https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg');" class="profilePicture"></div>
-							</center>
-						</div>
-						<div class="col-sm">
-							<label class="name_profilePicture align">Gustavo</label>
-						</div>
-					</div>
-				</div>
-				<hr>
+				<hr style="margin-bottom: 30px !important;">
 			</center>
 		</div>
 
@@ -143,7 +130,7 @@
 		</a>
 
 		<!-- link -->
-		<a href="<?php echo $appLocal ?>/">
+		<!-- <a href="<?php echo $appLocal ?>/">
 			<div class="linkAdmin <?php if ($pageName == 'Colaboradores'){echo 'ativo';} ?>">
 				<div class="row">
 					<div style="text-align: center;" class="col-3">
@@ -154,7 +141,7 @@
 					</div>
 				</div>
 			</div>
-		</a>
+		</a> -->
 
 	</div>
 </div>

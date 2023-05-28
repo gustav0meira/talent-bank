@@ -10,6 +10,8 @@
 
 ?>
 
+<link rel="icon" type="image/x-icon" href="<?php echo $appLocal ?>/assets/favicon.png">
+
 <style>
 	body{
 		padding: 75px 50px 0px calc(16vw + 50px);

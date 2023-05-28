@@ -69,6 +69,7 @@ h1{
 .menu_item{
 	color: white !important;
 	font-weight: 300;
+	cursor: pointer !important;
 	margin: 20px;
 }
 
