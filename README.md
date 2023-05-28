@@ -12,7 +12,7 @@ Aqui estão as tarefas a serem realizadas para finalizar o projeto:
 - [X] Criar módulo de remoção de vaga do banco de dados
 - [X] Criar tabela com vagas disponíveis
 - [X] Criar módulo de edição (edit) para a página de vagas
-- [ ] Criar módulo de visualização (view) para a página de vagas
+- [X] Criar módulo de visualização (view) para a página de vagas
 
 ## Padronização de Código
 
