@@ -1,0 +1,83 @@
+body{
+	padding: 100px !important;
+	background: url('../background.png') !important;
+	background-color: #05080e !important;
+	background-position: center center !important;
+	background-size: cover !important;
+	color: white !important;
+	font-weight: 300 !important;
+	overflow: hidden !important;
+}
+
+p{
+	font-weight: 300 !important;
+	margin-top: 20px;
+	color: #FFFFFF50;
+}
+
+h1{
+	color: white !important;
+}
+
+.search input{
+	width: 100%;
+	padding: 15px;
+	font-weight: 300;
+	border-radius: 50px;
+	padding-left: 30px;
+	border: none !important;
+	font-size: 14px !important;
+	font-weight: 300;
+}
+
+.search button{
+	width: 100%;
+	padding: 15px;
+	font-size: 14px !important;
+	font-weight: 300;
+	border-radius: 50px;
+	border: none !important;
+}
+
+.search{
+	background: white;
+	border-radius: 50px;
+	width: 90%;
+	margin-top: 50px;
+}
+
+.logo{
+	width: 7%;
+	margin-bottom: 40px;
+}
+
+.align{
+	position: absolute;
+	top: 30%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.menu{
+	position: absolute;
+	top: 50;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.menu_item{
+	color: white !important;
+	font-weight: 300;
+	margin: 20px;
+}
+
+.copy{
+	font-size: 10px !important;
+	font-weight: 300 !important;
+	color: #FFFFFF30;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20px;
+}

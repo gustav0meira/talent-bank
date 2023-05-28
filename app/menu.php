@@ -115,6 +115,20 @@
 		</a>
 
 		<!-- link -->
+		<!-- <a href="<?php echo $appLocal ?>/email/">
+			<div class="linkAdmin <?php if ($pageName == 'E-mail'){echo 'ativo';} ?>">
+				<div class="row">
+					<div style="text-align: center;" class="col-3">
+						<i class="fa-regular fa-envelope align"></i>
+					</div>
+					<div class="col-sm">
+						<label class="title_linkAdmin">E-mail</label>
+					</div>
+				</div>
+			</div>
+		</a> -->
+
+		<!-- link -->
 		<a href="<?php echo $appLocal ?>/">
 			<div class="linkAdmin <?php if ($pageName == 'Currículos'){echo 'ativo';} ?>">
 				<div class="row">

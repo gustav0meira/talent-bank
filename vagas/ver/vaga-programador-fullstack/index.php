@@ -1,6 +1,6 @@
 <?php
 
-include_once('../../../app/config.php');
+include_once('../../app/config.php');
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -61,9 +61,6 @@ if (isset($_GET['id'])) {
       font-weight: 300 !important;
       color: #333 !important
     }
-    .none{
-    	display: none !important;
-    }
   </style>
 </head>
 <body>
@@ -73,23 +70,11 @@ if (isset($_GET['id'])) {
 				<h3 class="align title"><?php echo $titulo ?></h3>
 			</div>
 			<div class="col-6">
-				<a href="#"><button class="topModule right">💻 Sita da Empresa</button></a>
-				<a href="#"><button class="topModule right">📑 Enviar Currículo</button></a>
+				<a href="./arquivadas/"><button class="topModule right">💻 Sita da Empresa</button></a>
 			</div>
 			<div class="col-12">
 				<div class="module">
-					<div class="row">
-						<div class="col-12">
-							<label>Local: <?php echo ($local != null) ? $local : '<span class="none">N/A</span>'; ?></label><br><br>
-							<label>Modalidade: <?php echo ($modalidade != null) ? $modalidade : '<span class="none">N/A</span>'; ?></label><br><br>
-							<label>Tipo do Contrato: <?php echo ($tipoContrato != null) ? $tipoContrato : '<span class="none">N/A</span>'; ?></label><br><br>
-							<label>Nível de Carreira: <?php echo ($nivelCarreira != null) ? $nivelCarreira : '<span class="none">N/A</span>'; ?></label><br><br>
-							<label>Encerramento do Processo: <?php echo ($dataLimite != null) ? date('d/m/Y', strtotime($dataLimite)) : '<span class="none">N/A</span>'; ?></label><br><br>
-							<label>Salário: R$ <?php echo ($salario != null) ? number_format($salario, 2, ',', '.') : '<span class="none">N/A</span>'; ?></label><br><br>
-							<hr>
-							<?php echo $descricao ?>
-						</div>
-					</div>
+          <?php print_r($row); ?>
 				</div>
 			</div>
 		</div>

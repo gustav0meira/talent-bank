@@ -1,0 +1,78 @@
+#vagasAbertas {
+	width: 100% !important;
+	height: 70vh !important;
+	font-family: Poppins !important;
+	overflow-x: hidden !important;
+}
+
+.ag-body-horizontal-scroll-viewport{
+	display: none !important;
+	overflow: hidden !important;
+}
+
+.ag-theme-material .ag-root {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.fa-eye,
+.fa-edit,
+.fa-trash{
+	margin-right: 20px;
+	margin-top: 16px !important;
+	text-align: center !important;
+}
+
+.ag-body-vertical-scroll-viewport {
+	overflow-x: hidden !important;
+	overflow: auto !important;
+	scrollbar-width: thin;
+	scrollbar-color: #888888 #f5f5f5;
+}
+
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar {
+	width: 8px;
+}
+
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-track {
+	background-color: #f5f5f5;
+	border-radius: 4px !important;
+}
+
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-thumb {
+	background-color: #888888;
+	border-radius: 4px;
+}
+
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-thumb:hover {
+	background-color: #555555;
+}
+
+.ag-body-horizontal-scroll-viewport {
+	overflow-x: auto !important;
+	overflow-y: hidden !important;
+	scrollbar-width: thin;
+	scrollbar-color: #888888 #f5f5f5;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar {
+	height: 8px;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-track {
+	background-color: #f5f5f5;
+	border-radius: 4px !important;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb {
+	background-color: #888888;
+	border-radius: 4px;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb:hover {
+	background-color: #555555;
+}
+
+.ag-filter-body-wrapper .ag-simple-filter-body-wrapper {
+	font-family: Poppins !important;
+}
