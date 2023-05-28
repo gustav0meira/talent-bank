@@ -2,6 +2,8 @@
 
 Este é um sistema desenvolvido para facilitar o processo de contratação no departamento de Recursos Humanos (RH) de uma empresa. O sistema oferece funcionalidades para gerenciamento de vagas, triagem automática de currículos, entrevistas virtuais, testes e avaliações online, colaboração entre a equipe de recrutamento, integração com outras ferramentas, automação de tarefas, análise de dados e relatórios.
 
+![home](https://github.com/gustav0meira/talent-bank/assets/112213145/488551a5-52e4-4e6f-8d11-90e950a0e94d)
+
 ## Tasks
 
 Aqui estão as tarefas a serem realizadas para finalizar o projeto:
